@@ -1,13 +1,16 @@
-###RCNN-Based Chest X-Ray Classification
+# RCNN-Based Chest X-Ray Classification
 
-##Introduction
+## Introduction
 This project implements a Region-based Convolutional Neural Network (RCNN) to classify chest X-rays into two categories: Normal and Pneumonia. The model leverages the pre-trained VGG16 architecture for feature extraction and fine-tunes a custom head for binary classification.
 
-#Installation
+## Installation
 To run this project, install the required dependencies:
+
+```bash
 pip install tensorflow numpy matplotlib pandas pillow
 
-#Usage
+
+## Usage
 1.Prepare the Dataset: Ensure your dataset is organized as follows:
 data/
 ├── train/
@@ -25,7 +28,7 @@ python rcnn.py
 from rcnn import predict_image_rcnn
 predict_image_rcnn("path/to/your/image.jpg")
 
-#Project Structure
+## Project Structure
 .
 ├── rcnn.py                     # Main script for training and evaluating the model
 ├── chestxray_rcnn_model.h5     # Trained model file
